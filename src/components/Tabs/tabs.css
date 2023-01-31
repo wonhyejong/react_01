@@ -1,0 +1,22 @@
+.tab{
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+.tab-title{
+    display: flex;
+    font-size:1rem ;
+    border-top:1px solid rgb(184, 183, 183);
+    border-bottom:1px solid rgb(184, 183, 183)
+}
+
+.btn{
+    padding:0.5rem 0.875rem;
+    border:none;
+    background-color: #fff;
+}
+.btn.active{
+    border-top:1px solid rgb(255, 11, 84);
+    border-bottom:1px solid rgb(255, 11, 84);
+    color:rgb(255, 11, 84);
+}

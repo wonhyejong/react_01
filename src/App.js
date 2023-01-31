@@ -3,7 +3,7 @@ import MovieList from './components/MovieLIst/MovieList';
 import UserList from './components/UserList/UserList';
 import { useState } from 'react';
 import NewsList from './components/NewsList/NewsList';
-
+import Tabs from './components/Tabs/Tabs';
 function App() {
   const [num,setNum] = useState(0) ;
   const [name,setName] =useState('미니');
@@ -23,6 +23,7 @@ function App() {
   return (
    
     <div className="App">
+      <Tabs />
       <NewsList />
       <div className='count-box'>
         <h2>{num}</h2>
