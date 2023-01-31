@@ -2,6 +2,7 @@ import './App.css';
 import MovieList from './components/MovieLIst/MovieList';
 import UserList from './components/UserList/UserList';
 import { useState } from 'react';
+import NewsList from './components/NewsList/NewsList';
 
 function App() {
   const [num,setNum] = useState(0) ;
@@ -22,6 +23,7 @@ function App() {
   return (
    
     <div className="App">
+      <NewsList />
       <div className='count-box'>
         <h2>{num}</h2>
         <button onClick={plus}>1씩증가</button>
