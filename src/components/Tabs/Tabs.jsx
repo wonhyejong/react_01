@@ -10,6 +10,7 @@ const Tabs = () => {
         e.preventDefault();
         setDataIndex(index)
     }
+    const dataUl = tabData.filter((item,index)=>index===dataIndex)
     return (
         <div className='tab'>
             <div className='tab-title'>
@@ -18,7 +19,9 @@ const Tabs = () => {
                 }
             </div>
             <div className='tab-body'>
-                <TabUl />
+                  {
+                   dataUl.map((data,index)=><TabUl key={data.id} data={data} />)
+                  }
             </div>
         </div>
     );

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TabLi = () => {
+const TabLi = ({img}) => {
     return (
-        <div>
-            
-        </div>
+        <li>
+            <img src={img} alt="" />
+        </li>
     );
 };
 
