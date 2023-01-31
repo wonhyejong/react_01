@@ -4,3 +4,6 @@
 
 *{margin: 0;padding: 0;}
 .title2{color:coral}
+ul,li{list-style: none;}
+.userListBox.on{display: block;}
+.userListBox.off{display: none;}
